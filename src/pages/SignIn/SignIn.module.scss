@@ -1,5 +1,6 @@
-.container{
-    padding:10px 20px 30px;
-    max-width:595px;
-    margin-top:80px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

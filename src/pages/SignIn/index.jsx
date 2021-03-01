@@ -7,7 +7,7 @@ const SignIn = props => {
   const onSubmit = values => console.log(values);
 
   return (
-    <div>
+    <div >
       <Header />
       <main className={styles.container}>
         <h1>Login to your account</h1>
