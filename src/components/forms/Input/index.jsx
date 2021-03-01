@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { Field, ErrorMessage } from 'formik';
+import { ErrorMessage } from 'formik';
 import styles from './Input.module.scss';
 
 const Input = props => {

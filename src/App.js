@@ -1,3 +1,4 @@
+import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import SignInForm from './components/forms/SignInForm';
@@ -8,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/' component={SignIn} />
+          <Route path='/' component={SignIn}/>
           {/* <Route path='/sign-in' component={} />; */}
         </Switch>
       </BrowserRouter>
