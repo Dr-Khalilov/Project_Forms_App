@@ -9,7 +9,7 @@ const SignIn = props => {
   return (
     <div >
       <Header />
-      <main className={styles.container}>
+      <main className={styles.signInContainer}>
         <h1>Login to your account</h1>
         <SignInForm onSubmit={onSubmit} />
       </main>
