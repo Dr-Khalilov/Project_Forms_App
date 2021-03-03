@@ -8,7 +8,7 @@ const Header = props => {
       <Link to='/'>
         <img src='./staticAssets/icons/logo.png' alt='logo' />
       </Link>
-      <Link to='/sign-up'>Signup</Link>
+      <Link className={styles.signUpLink} to='/sign-up'>Signup</Link>
     </header>
   );
 };
