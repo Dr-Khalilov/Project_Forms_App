@@ -1,12 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import styles from './HomePage.module.scss';
 const HomePage = () => {
   return (
-    <>
-      <Link to='/sign-in' >SignIn</Link>
-      <Link to='/sign-up' >SignUp</Link>
-    </>
+    <div className={styles.homePageContainer}>
+      <a
+        href='https://www.squadhelp.com/login'
+        target='_blank'
+        rel='noreferrer'
+        className={styles.linkStyles}
+      >
+        <h1>Неповторимый оригинал!</h1>
+      </a>
+      <div>
+        <h1 style={{ paddingBottom: '20px' }}>Жалкая пародия...</h1>
+        <Link to='/sign-in' className={styles.linkStyles}>
+          SignIn
+        </Link>
+        <Link to='/sign-up' className={styles.linkStyles}>
+          SignUp
+        </Link>
+      </div>
+    </div>
   );
 };
 

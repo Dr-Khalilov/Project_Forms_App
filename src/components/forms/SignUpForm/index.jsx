@@ -24,7 +24,7 @@ const SignUpForm = props => {
     >
       <Form className={styles.SignUpFormStyles}>
         <Field name={'name'}>
-          {fieldProps => <Input {...fieldProps} placeholder='Name' autoFocus />}
+          {fieldProps => <Input {...fieldProps} placeholder='Name' />}
         </Field>
         <Field name={'surName'}>
           {fieldProps => <Input {...fieldProps} placeholder='Surname' />}
