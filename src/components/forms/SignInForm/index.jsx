@@ -3,6 +3,7 @@ import { Formik, Form, Field } from 'formik';
 import PropTypes from 'prop-types';
 import { SIGN_IN_SCHEMA } from '../../../utils/validationSchemas';
 import Input from '../Input';
+import styles from './SignInForm.module.scss';
 
 const SignInForm = props => {
   const initialValues = {
@@ -18,14 +19,38 @@ const SignInForm = props => {
     >
       {formProps => {
         return (
-          <Form>
+          <Form className={styles.signInContainer}>
             <Field name={'email'}>
-              {fieldProps => <Input {...fieldProps} placeholder='Email' />}
+              {fieldProps => <Input {...fieldProps} placeholder='Email Address' autoFocus />}
             </Field>
             <Field name={'password'}>
-              {fieldProps => <Input {...fieldProps} type='password' placeholder='Password'/>}
+              {fieldProps => (
+                <Input {...fieldProps} type='password' placeholder='Password' />
+              )}
             </Field>
-            <Field type='submit' value='Submit' />
+            <div className={styles.checkboxStyles}>
+              <label>
+                <Field
+                  type='checkbox'
+                  id='remember me'
+                  name='remember me'
+                  value='remember me'
+                />
+                <span> Remeber Me!</span>
+              </label>
+              <a
+                href='https://www.squadhelp.com/forgot_password.php'
+                target='_blank'
+                rel='noreferrer'
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                }}
+              >
+                Forgot Password
+              </a>
+            </div>
+            <Field className={styles.btnStyles} type='submit' value='LOGIN' />
           </Form>
         );
       }}

@@ -1,5 +1,17 @@
 .container {
-  padding: 10px 20px 30px;
-  max-width: 595px;
-  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+
 }
+
+.headingStyles {
+  font-size: 40px;
+  color: white;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+

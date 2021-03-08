@@ -7,10 +7,10 @@ const SignIn = props => {
   const onSubmit = values => console.log(values);
 
   return (
-    <div >
+    <div>
       <Header />
       <main className={styles.signInContainer}>
-        <h1>Login to your account</h1>
+        <h1 className={styles.headingStyles}>Login to your account</h1>
         <SignInForm onSubmit={onSubmit} />
       </main>
     </div>

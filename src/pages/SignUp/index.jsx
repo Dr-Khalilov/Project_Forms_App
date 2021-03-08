@@ -10,8 +10,10 @@ const SignUp = props => {
     <div>
       <Header />
       <main className={styles.container}>
-        <h1>CREATE AN ACCOUNT</h1>
-        <h3>We always keep your name and email address private.</h3>
+        <h1 className={styles.headingStyles}>CREATE AN ACCOUNT</h1>
+        <h3 style={{ color: 'white', paddingBottom: '15px', fontWeight: 500 }}>
+          We always keep your name and email address private.
+        </h3>
         <SignUpForm onSubmit={onSubmit} />
       </main>
     </div>
