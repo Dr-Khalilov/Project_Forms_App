@@ -21,7 +21,8 @@ export const SIGN_IN_SCHEMA = Yup.object({
 export const SIGN_UP_SCHEMA = Yup.object({
   name: NAME_SCHEMA,
   surName: NAME_SCHEMA,
-  nickName: Yup.string().matches(/^[A-Z][a-z]{3,12}$/, 'Enter a valid nickname')
+  nickName: Yup.string()
+    .matches(/^[A-Z][a-z]{3,12}$/, 'Enter a valid nickname')
     .required(),
   emailAddress: Yup.string()
     .email('Email must be a truly email')
@@ -32,8 +33,10 @@ export const SIGN_UP_SCHEMA = Yup.object({
       'Password have to contain an one big letter and etc...'
     )
     .required(),
-  passwordConfirmation: Yup.string().oneOf(
-    [Yup.ref('password')],
-    'Passwords must match'
-  ).required(),
+  passwordConfirmation: Yup.string()
+    .oneOf([Yup.ref('password')], 'Passwords must match')
+    .required(),
+  role: Yup.string()
+    .oneOf(['buyer', 'creative'])
+    .required(),
 });
