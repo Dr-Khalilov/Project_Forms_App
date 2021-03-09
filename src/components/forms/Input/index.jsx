@@ -14,7 +14,11 @@ const Input = props => {
     <>
       <label className={styles.container}>
         <input {...field} type='text' className={classNames} {...rest} />
-        <ErrorMessage component='div' name={field.name} className={styles.arrowStyles} />
+        <ErrorMessage
+          component='div'
+          name={field.name}
+          className={styles.arrowStyles}
+        />
       </label>
     </>
   );

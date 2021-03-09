@@ -11,10 +11,10 @@ const HomePage = () => {
         rel='noreferrer'
         className={styles.linkStyles}
       >
-        <h1>Неповторимый оригинал!</h1>
+        <h1 style={{ color: 'white' }}>Неповторимый оригинал!</h1>
       </a>
       <div>
-        <h1 style={{ paddingBottom: '20px', color: 'white' }}>
+        <h1 style={{ paddingBottom: '20px', color: '#9c6441' }}>
           Жалкая пародия...
         </h1>
         <Link to='/sign-in' className={styles.linkStyles}>

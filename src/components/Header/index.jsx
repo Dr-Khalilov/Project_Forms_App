@@ -7,6 +7,13 @@ const Header = props => {
   const switchLink = () => {
     setIsOpen(!isOpen);
   };
+  // const switchLink2 = () => {
+  //   if ((<Link to='sign-in'>Signin</Link>)) {
+  //     return <Link to='sign-up'>Signup</Link>;
+  //   } else if ((<Link to='sign-up'>Signup</Link>)) {
+  //     return <Link to='sign-in'>Signin</Link>;
+  //   }
+  // };
   return (
     <header className={styles.container}>
       <Link to='/'>
