@@ -45,7 +45,7 @@ const SignInForm = props => {
               color: 'white',
             }}
           >
-            Forgot Password
+            Forgot Password ?
           </a>
         </div>
         <Field className={styles.btnStyles} type='submit' value='LOGIN' />

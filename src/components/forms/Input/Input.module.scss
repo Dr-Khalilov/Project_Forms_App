@@ -20,3 +20,25 @@
 .invalidInput {
   border: 2px solid red;
 }
+
+.arrowStyles {
+  position: relative;
+  padding: 15px 20px;
+  width: 300px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+}
+
+.arrowStyles::after {
+  content: '';
+  position: absolute;
+  border: solid transparent;
+  left: 12px;
+  bottom: 100%;
+  border-bottom-color: red;
+  border-width: 10px;
+  margin-left: 10px;
+}

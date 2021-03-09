@@ -13,7 +13,9 @@ const HomePage = () => {
         <h1>Неповторимый оригинал!</h1>
       </a>
       <div>
-        <h1 style={{ paddingBottom: '20px' }}>Жалкая пародия...</h1>
+        <h1 style={{ paddingBottom: '20px', color: 'white' }}>
+          Жалкая пародия...
+        </h1>
         <Link to='/sign-in' className={styles.linkStyles}>
           SignIn
         </Link>
