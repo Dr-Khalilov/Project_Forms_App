@@ -5,8 +5,6 @@ export const NAME_SCHEMA = Yup.string()
   .required();
 
 export const SIGN_IN_SCHEMA = Yup.object({
-  name: NAME_SCHEMA,
-  surName: NAME_SCHEMA,
   email: Yup.string()
     .email('Email must be a truly email')
     .required(),

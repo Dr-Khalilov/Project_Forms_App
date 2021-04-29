@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "classnames": "^2.2.6",
-    "eslint-plugin-react-hooks": "^4.2.0",
     "formik": "^2.2.6",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
@@ -42,8 +41,6 @@
     ]
   },
   "devDependencies": {
-    "prettier-standard": "^16.4.1",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.5.0"
+    "prettier-standard": "^16.4.1"
   }
 }

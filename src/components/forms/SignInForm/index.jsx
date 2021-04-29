@@ -9,6 +9,7 @@ const SignInForm = props => {
   const initialValues = {
     email: '',
     password: '',
+    'remember me': false,
   };
 
   return (
@@ -48,7 +49,7 @@ const SignInForm = props => {
             Forgot Password ?
           </a>
         </div>
-        <Field className={styles.btnStyles} type='submit' value='LOGIN' />
+        <input className={styles.btnStyles} type='submit' value='LOGIN' />
       </Form>
     </Formik>
   );
